@@ -64,7 +64,7 @@ tf.app.flags.DEFINE_string('log_file_name',
                                          'x' + str(FLAGS.heatmap_size) + '_' + str(
                                FLAGS.stages) + 's',
                            docstring='Log file name')
-tf.app.flags.DEFINE_string('log_dir',
+tf.app.flags.DEFINE_string('log_dir_2',
                            default_value='logs/_cpm_body_i' + str(FLAGS.input_size) + 'x' + str(
                                FLAGS.input_size) + '_o' + str(FLAGS.heatmap_size) + \
                                          'x' + str(FLAGS.heatmap_size) + '_' + str(
@@ -113,7 +113,7 @@ def main(argv):
         threads = tf.train.start_queue_runners(coord=coord)
 
         ## Create summary
-        tf_writer = tf.summary.FileWriter(FLAGS.log_dir, sess.graph, filename_suffix=FLAGS.log_file_name)
+        tf_writer = tf.summary.FileWriter(FLAGS.log_dir_2, sess.graph, filename_suffix=FLAGS.log_file_name)
 
         ## Create model saver
         saver = tf.train.Saver(max_to_keep=None)
