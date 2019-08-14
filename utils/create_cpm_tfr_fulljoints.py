@@ -7,8 +7,8 @@ import time
 import random
 import os
 
-tfr_file = '../cpm_sample_dataset_1130_1250.tfrecords'
-dataset_dir = '../dataset/'
+tfr_file = './cpm_sample_dataset_1130_1250.tfrecords'
+dataset_dir = './dataset/'
 # tfr_file = 'cpm_sample_dataset_9.tfrecords'
 # dataset_dir = '../dataset/'
 
