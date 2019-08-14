@@ -11,11 +11,11 @@ FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('tfr_data_files',
                            # default_value=['./train_128x128.tfrecords'],
                            # default_value='./utils/cpm_sample_dataset_9.tfrecords',
-                           default_value='E:/MLTrainingData/handpose/cmu_hand/cpm_sample_dataset_1130_1250.tfrecords',
+                           default_value='/mnt/tfrecords/cpm_sample_dataset_1130_1250.tfrecords',
                            docstring='Training data tfrecords')
 tf.app.flags.DEFINE_string('pretrained_model',
-                           default_value='./models/_cpm_body_i368x368_o46x46_6s-10001',
-                           # default_value=None,
+                           # default_value='./models/_cpm_body_i368x368_o46x46_6s-10001',
+                           default_value=None,
                            docstring='Pretrained mode')
 tf.app.flags.DEFINE_integer('input_size',
                             # default_value=128,
