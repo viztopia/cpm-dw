@@ -7,8 +7,8 @@ import time
 import random
 import os
 
-tfr_file = 'E:/MLTrainingData/handpose/cmu_hand/cpm_sample_dataset_1130_1250.tfrecords'
-dataset_dir = 'E:/MLTrainingData/handpose/cmu_hand/dataset/'
+tfr_file = '../cpm_sample_dataset_1130_1250.tfrecords'
+dataset_dir = '../dataset/'
 # tfr_file = 'cpm_sample_dataset_9.tfrecords'
 # dataset_dir = '../dataset/'
 
